@@ -97,14 +97,6 @@ app.get('/:XTejName', function(req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'XTej-one.html'));
 });
 
-app.get('/XTej-two', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'XTej-two.html'));
-});
-
-app.get('/XTej-three', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'XTej-three.html'));
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
