@@ -7,45 +7,45 @@ app.use(morgan('combined'));
 
 var XTerox={
     var XTej-one:{
-               title: 'Introductin to Tej',
+               title: 'Introduction to Tej',
                heading: 'Welcome to Tej',
-               date:'Aug 25',
+               date: 'Aug 25',
                content:`    
                <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>
                 <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>
                 <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>`
-             };
-    var XTej-two:{title: 'Introductin to Tej-2',
+};
+    var XTej-two:{title: 'Introduction to Tej-2',
                heading: 'Welcome to Tej',
                date:'Aug 12',
                content:`    
                <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>
                 <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>
                 <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>`};
-    var XTej-three:{title: 'Introductin to Tej-3',
+    var XTej-three:{title: 'Introduction to Tej-3',
                heading: 'Welcome to Tej',
                date:'Aug 05',
                content:`    
                <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>
                 <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)   
                             </p>
                 <p>
-                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>`};      
 };             
     function createTemplate (data){
