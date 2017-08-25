@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var XTerox={
-    var XTej-one:{
+    'XTej-one': {
                title: 'Introduction to Tej',
                heading: 'Welcome to Tej',
                date: 'Aug 25',
@@ -20,8 +20,8 @@ var XTerox={
                 <p>
                             My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
                             </p>`
-};
-    var XTej-two:{title: 'Introduction to Tej-2',
+},
+    'XTej-two':{title: 'Introduction to Tej-2',
                heading: 'Welcome to Tej',
                date:'Aug 12',
                content:`    
@@ -33,8 +33,8 @@ var XTerox={
                             </p>
                 <p>
                             My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
-                            </p>`};
-    var XTej-three:{title: 'Introduction to Tej-3',
+                            </p>`},
+    'XTej-three':{title: 'Introduction to Tej-3',
                heading: 'Welcome to Tej',
                date:'Aug 05',
                content:`    
@@ -46,7 +46,7 @@ var XTerox={
                             </p>
                 <p>
                             My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  
-                            </p>`};      
+                            </p>`},     
 };             
     function createTemplate (data){
         var title=data.title;
@@ -91,18 +91,18 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:XTejName', function(req, res) {
-    //XTejName==XTej-1
+    //XTejName==XTej-one
     //XTerox=[XTejName]=={} content object for XTej-one
     var XTejName = req.params.XTejName;
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'XTej-one.html'));
 });
 
-app.get('/article-two', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+app.get('/XTej-two', function(req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'XTej-two.html'));
 });
 
-app.get('/article-three', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+app.get('/XTej-three', function(req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'XTej-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
