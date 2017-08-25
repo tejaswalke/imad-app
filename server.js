@@ -94,7 +94,15 @@ app.get('/:XTejName', function(req, res) {
     //XTejName==XTej-one
     //XTerox=[XTejName]=={} content object for XTej-one
     var XTejName = req.params.XTejName;
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'XTej-one.html'));
+});
+
+app.get('/XTej-two', function(req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'XTej-two.html'));
+});
+
+app.get('/XTej-three', function(req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'XTej-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
