@@ -91,14 +91,14 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:XTejName', function(req, res) {
-    //XTejName==XTej-one
+    //XTejName==article-one
     //XTerox=[XTejName]=={} content object for XTej-one
     var XTejName = req.params.XTejName;
-  res.sendFile(path.join(__dirname, 'ui', 'XTej-one.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/XTej-two', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'XTej-two.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
 app.get('/XTej-three', function(req, res) {
