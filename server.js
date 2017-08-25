@@ -5,6 +5,60 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var XTej1= {
+               title: 'Introductin to Tej',
+               heading: 'Welcome to Tej',
+               date:'Aug 25',
+               content:`    
+               <p>
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            </p>
+                <p>
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            </p>
+                <p>
+                            My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-)  My name is Tejas Walke and i am frm India , Welcome to my Page ;-) 
+                            </p>`
+             };
+             
+    function createTemplate (data){
+        var title=data.title;
+        var heading=data.heading;
+        var date=data.date;
+        var content=data.content;
+    
+    var htmltemplate=
+        `<html>
+        <head>
+            <title>
+                Information-Tej -2
+            </title>
+        <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        
+        <body>
+          <div class="container">
+            <div>
+            <a href='/'>home</a>
+            </div>
+           <hr/>
+       
+                    
+            
+                <h3>
+                ${heading}
+                </h3>
+                <div>
+                ${date}
+                </div>
+                ${content}
+                </div>       
+        </body>
+        </html>
+        
+    `;
+    return htmltemplate
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
