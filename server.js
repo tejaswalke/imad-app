@@ -5,6 +5,49 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne={
+    title:' Article-One  | Tejas Walke',
+    heading:'Article One',
+    date:'Dec 12, 2017',
+    content: `
+                <p>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    
+                </p>
+                
+                <p>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    
+                </p>
+                
+                <p>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                    
+                </p>
+    `
+    
+};
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
