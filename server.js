@@ -13,35 +13,6 @@ app.use(morgan('combined'));
         content: `
                     <p>
                         This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        
-                    </p>
-                    
-                    <p>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        
-                    </p>
-                    
-                    <p>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                        
                     </p>
         `
         
@@ -117,7 +88,7 @@ function createTemplate (data) {
                     return htmlTemplate;
 }
 
-app.get('/', function (req, res) {
+app.get('/articleName', function (req, res) {
     //articleName==article-one
     //articles[articleName]=={} content object for article one
     var articleName=req.params.articleName;
