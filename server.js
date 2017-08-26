@@ -120,7 +120,7 @@ function createTemplate (data) {
 app.get('/', function (req, res) {
     //articleName==article-one
     //articles[articleName]=={} content object for article one
-    var articleName=rew.params.articleName;
+    var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
  
 });
