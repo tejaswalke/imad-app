@@ -62,7 +62,7 @@ function createTemplate (data){
     var heading = data.heading;
     var content = data.content;
     var htmlTemplate = `
-                      <html>
+        <html>
         <head>
             <title>
                 ${title}
@@ -72,8 +72,7 @@ function createTemplate (data){
             
             <link href="/ui/style.css" rel="stylesheet" />
         </head>
-    
-    <body>
+        <body>
             <div class='container'>
                     <div>
                         <a href="/">Home</a>
