@@ -5,46 +5,56 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
-    title: 'Article One | Tejas Walke',
-    heading:'Article One',
-    date:'Dec 12',
-    content: `
-                        <p>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            
-                                 </p>
-                        
-                        <p>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            
-                                 </p>
-                        
-                        <p>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            This is the content of my First Article :-) This content is edited by Tejas Walke<br>
-                            
-                                 </p>
+var articles={
+            'article-One':{
+            title: 'Article One | Tejas Walke',
+            heading:'Article One',
+            date:'Dec 12',
+            content: `
+                                <p>
+                                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my First Article :-) This content is edited by Tejas Walke<br>
+                                    
+                                        
              `
+},
+            'article-Two':{
+            title: 'Article Two | Tejas Walke',
+            heading:'Article Two',
+            date:'Dec 13',
+            content: `
+                                <p>
+                                    This is the content of my Second Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Second Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Second Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Second Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Second Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Second Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Second Article :-) This content is edited by Tejas Walke<br>
+                                    </p>    
+             `
+            },
+            'article-Three':{
+            title: 'Article Three | Tejas Walke',
+            heading:'Article Three',
+            date:'Dec 23',
+            content: `
+                                <p>
+                                    This is the content of my Third Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Third Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Third Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Third Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Third Article :-) This content is edited by Tejas Walke<br>
+                                    This is the content of my Third Article :-) This content is edited by Tejas Walke<br>
+                                    </p>    
+             `
+            }
 };
-
 function createTemplate(data){
     var title=data.title;
     var date=data.date;
@@ -94,8 +104,11 @@ app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, 'ui','index.html'));
 });
 
-app.get('/article-one', function(req, res){
-    res.send(createTemplate(articleOne));
+app.get('/:articleName', function(req, res){
+    //articleName==article-one//
+    //articles[articleName]=={} content object for article one
+    var articleNmae=req.params.articleName;
+    res.send(createTemplate(articles[[articleName]]));
 });
 
 app.get('/article-two', function(req, res){
